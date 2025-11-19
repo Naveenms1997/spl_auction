@@ -43,6 +43,8 @@ export function GlobalProvider({ children }) {
     setState((prev) => {
       const updated = { ...prev, ...newValues };
       // Save to main process for other windows
+      console.log("????",updated);
+      
       window.electronAPI?.send("context-update", updated);
       return updated;
     });

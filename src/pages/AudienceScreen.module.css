@@ -1,0 +1,17 @@
+/* src/pages/AudienceScreen.module.css */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;                       /* Remove default margins */
+  padding: 0;
+  background-size: cover;       /* image covers entire container */
+  background-position: center;  /* center image */
+  background-repeat: no-repeat;
+}
+
+.content {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

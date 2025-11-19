@@ -1,29 +1,55 @@
 import React from "react";
 import { useAppContext } from "../context/GlobalContext";
+import { Box, Button, Stack, TextField } from "@mui/material";
+import backgroundImg from "../assets/images/blue_abstract_lines_2.jpg";
 
 export default function MainPage() {
   const { state, updateState } = useAppContext();
 
+  const resetState = () => {
+    updateState({ player: "", amount: 0 });
+  };
   return (
-    <div>
-      <h2>Main Window</h2>
+    <Stack
+      sx={{
+        backgroundImage: `url(${backgroundImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        minHeight: "100vh",
+      }}
+    >
+      <Stack spacing={2} direction="column" sx={{ width: 300}}>
+        <TextField
+          label="Player Name"
+          variant="outlined"
+          value={state.player}
+          onChange={(e) => updateState({ player: e.target.value })}
+        />
+        <TextField
+          label="Amount"
+          type="number"
+          variant="outlined"
+          value={state.amount}
+          onChange={(e) => updateState({ amount: Number(e.target.value) })}
+        />
 
-      <input
-        placeholder="Player name"
-        value={state.player}
-        onChange={(e) => updateState({ player: e.target.value })}
-      />
-
-      <input
-        type="number"
-        placeholder="Amount"
-        value={state.amount}
-        onChange={(e) => updateState({ amount: Number(e.target.value) })}
-      />
-
-      <button onClick={() => window.electronAPI.send("open-second-window")}>
-        Open Second Window
-      </button>
-    </div>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => window.electronAPI.send("open-second-window")}
+        >
+          Open Second Window
+        </Button>
+         <Button
+          variant="outlined"
+          color="secondary"
+          onClick={resetState}
+        >
+          Reset
+        </Button>
+      </Stack>
+    </Stack>
   );
 }
