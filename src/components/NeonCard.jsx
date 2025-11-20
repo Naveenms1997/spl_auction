@@ -1,21 +1,21 @@
 import React from "react";
 import { Card } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import neoCardBgv from "../assets/images/neoCardBgv4.jpg";
+import neoCardBgv from "../assets/images/neoCardBgv10.jpeg";
 
 // Styled card with neon glow
 const NeonCardStyled = styled(Card)(({ theme }) => ({
-  border: "2px solid #3d31eaf9",
+  border: "2px solid #09a8e7f9",
   borderRadius: "12px",
-  boxShadow: "0 0 3px #3d31eaf9, 0 0 3px #3d31eaf9, 0 0 3px #3d31eaf9",
+  boxShadow: "0 0 3px #09a8e7f9, 0 0 3px #09a8e7f9, 0 0 5px #09a8e7f9",
 //   backgroundColor: "#111",
   color: "#fff",
   transition: "0.3s",
   "&:hover": {
-    boxShadow: "0 0 5px #3d31eaf9, 0 0 5px #3d31eaf9, 0 0 10px #3d31eaf9",
+    // boxShadow: "0 0 5px #12ed3af9, 0 0 5px #12ed3af9, 0 0 10px #12ed3af9",
+    boxShadow: "0 0 5px #09a8e7f9, 0 0 5px #09a8e7f9, 0 0 10px #09a8e7f9",
   },
   backgroundImage: `url(${neoCardBgv})` ,
-  height:"80%"
 }));
 
 export default function NeonCard({ children, sx }) {

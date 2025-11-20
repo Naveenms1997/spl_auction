@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "1",
+    "name": "NAVEEN KUMAR MS",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": 500,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "2",
+    "name": "SURESH",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "3",
+    "name": "Ramesh",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "4",
+    "name": "Dhoni",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "5",
+    "name": "Kohli",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "6",
+    "name": "Rahul",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "7",
+    "name": "Rohith",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "8",
+    "name": "Gill",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "9",
+    "name": "Raina",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "10",
+    "name": "Yuvraj",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "11",
+    "name": "Rakesh",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "12",
+    "name": "Shrikanth",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "13",
+    "name": "Rohit Sharma",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "14",
+    "name": "Hardik Pandya",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "15",
+    "name": "Shubman Gill",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "16",
+    "name": "Jasprit Bumrah",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "17",
+    "name": "KL Rahul",
+    "photo": "player_1.jpg",
+    "type": "Wicket-Keeper",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "18",
+    "name": "Suryakumar Yadav",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "19",
+    "name": "Mohammed Shami",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "20",
+    "name": "Ravindra Jadeja",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "21",
+    "name": "Axar Patel",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "22",
+    "name": "Ishan Kishan",
+    "photo": "player_1.jpg",
+    "type": "Wicket-Keeper",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "23",
+    "name": "Sanju Samson",
+    "photo": "player_1.jpg",
+    "type": "Wicket-Keeper",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "24",
+    "name": "Shreyas Iyer",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "25",
+    "name": "Ruturaj Gaikwad",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "26",
+    "name": "Washington Sundar",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "27",
+    "name": "Prithvi Shaw",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "28",
+    "name": "Shardul Thakur",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "29",
+    "name": "Deepak Chahar",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "30",
+    "name": "Varun Chakravarthy",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "31",
+    "name": "Wriddhiman Saha",
+    "photo": "player_1.jpg",
+    "type": "Wicket-Keeper",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "32",
+    "name": "Mayank Agarwal",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "33",
+    "name": "Manish Pandey",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "34",
+    "name": "Mohammed Siraj",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "35",
+    "name": "Kuldeep Yadav",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "36",
+    "name": "Yuzvendra Chahal",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "37",
+    "name": "Umran Malik",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "38",
+    "name": "Rishi Dhawan",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "39",
+    "name": "Abhishek Sharma",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "40",
+    "name": "Devdutt Padikkal",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "41",
+    "name": "Harshal Patel",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "42",
+    "name": "Venkatesh Iyer",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "43",
+    "name": "Nitish Rana",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "44",
+    "name": "Rajat Patidar",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "45",
+    "name": "Sarfaraz Khan",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "46",
+    "name": "Shivam Dube",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "47",
+    "name": "Navdeep Saini",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "48",
+    "name": "Suryakumar Yadav",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "49",
+    "name": "Shubham Sharma",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "50",
+    "name": "Kedar Jadhav",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "51",
+    "name": "Rahul Tripathi",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "52",
+    "name": "Sandeep Sharma",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "53",
+    "name": "Umesh Yadav",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "54",
+    "name": "Jaydev Unadkat",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "55",
+    "name": "Ravi Bishnoi",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "56",
+    "name": "Ripal Patel",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "57",
+    "name": "Shahbaz Ahmed",
+    "photo": "player_1.jpg",
+    "type": "All-Rounder",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "58",
+    "name": "Avesh Khan",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "59",
+    "name": "Ashwin Hebbar",
+    "photo": "player_1.jpg",
+    "type": "Batsman",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "60",
+    "name": "Basil Thampi",
+    "photo": "player_1.jpg",
+    "type": "Bowler",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "61",
+    "name": "Arshdeep Singh",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "62",
+    "name": "Sai Kishore",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "63",
+    "name": "Ravi Teja",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "64",
+    "name": "K Gowtham",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "65",
+    "name": "Mohit Sharma",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "66",
+    "name": "Vijay Shankar",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "67",
+    "name": "Abhimanyu Easwaran",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "68",
+    "name": "Harpreet Brar",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "69",
+    "name": "Jitesh Sharma",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "70",
+    "name": "Anmolpreet Singh",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "71",
+    "name": "Karun Nair",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "72",
+    "name": "Shivam Mavi",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "73",
+    "name": "Mukesh Kumar",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "74",
+    "name": "Rishi Patel",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "75",
+    "name": "Rohan Kadam",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "76",
+    "name": "Karthik Tyagi",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "77",
+    "name": "T Natarajan",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "78",
+    "name": "Suyash Prabhudessai",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "79",
+    "name": "Jagadeesan Narayan",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "80",
+    "name": "Priyam Garg",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "81",
+    "name": "Manan Vohra",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "82",
+    "name": "Dinesh Karthik",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "83",
+    "name": "Devendra Bishnoi",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "84",
+    "name": "Kunal Singh",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "85",
+    "name": "Aditya Tare",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "86",
+    "name": "Shaik Rasheed",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "87",
+    "name": "Tilak Varma",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "88",
+    "name": "Yash Dhull",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "89",
+    "name": "Harnoor Singh",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "90",
+    "name": "Raj Bawa",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "91",
+    "name": "Anuj Rawat",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "92",
+    "name": "Shahrukh Khan",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "93",
+    "name": "Sai Sudharsan",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "94",
+    "name": "Rasikh Salam",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "95",
+    "name": "Akash Deep",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "96",
+    "name": "Yash Dayal",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "97",
+    "name": "Ashutosh Sharma",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "98",
+    "name": "Aniket Choudhary",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "99",
+    "name": "Mohammed Kaif Jr",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "100",
+    "name": "Satyajeet Bachhav",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "101",
+    "name": "Pradosh Ranjan",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "102",
+    "name": "Lalit Yadav",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "103",
+    "name": "Rahul Chahar",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "104",
+    "name": "Aman Hakim Khan",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "105",
+    "name": "Apoorv Wankhade",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "106",
+    "name": "N Jagadeesan",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "107",
+    "name": "Vishnu Vinod",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "108",
+    "name": "Aniruddha Joshi",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "109",
+    "name": "Gurkeerat Mann",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "110",
+    "name": "Prayash Singh",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "111",
+    "name": "Shubham Ranjane",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "112",
+    "name": "M Siddharth",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "113",
+    "name": "Pulkit Narang",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "114",
+    "name": "Arpit Guleria",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "115",
+    "name": "Saurabh Tiwary",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+
+  {
+    "id": "116",
+    "name": "Pravin Dubey",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "117",
+    "name": "Sayan Mondal",
+    "type": "All-Rounder",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "118",
+    "name": "Rohit Rayudu",
+    "type": "Batsman",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "119",
+    "name": "Prateesh Yadav",
+    "type": "Bowler",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "120",
+    "name": "Nikhil Naik",
+    "type": "Wicket-Keeper",
+    "photo": "player_1.jpg",
+    "basePrice": 500,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  }
+]
