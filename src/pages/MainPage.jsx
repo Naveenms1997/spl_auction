@@ -10,15 +10,8 @@ export default function MainPage() {
     updateState({ player: "", amount: 0 });
   };
   return (
-    <Stack
-      sx={{
-        backgroundImage: `url(${backgroundImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        minHeight: "100vh",
-      }}
+    <Box
+      padding={4}
     >
       <Stack spacing={2} direction="column" sx={{ width: 300}}>
         <TextField
@@ -50,6 +43,6 @@ export default function MainPage() {
           Reset
         </Button>
       </Stack>
-    </Stack>
+    </Box>
   );
 }
