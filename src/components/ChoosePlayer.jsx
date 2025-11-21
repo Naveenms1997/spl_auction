@@ -47,9 +47,9 @@ function ChoosePlayer() {
                 borderRadius: "8px",
                 transition: "transform 0.25s ease, box-shadow 0.25s ease",
                 "&:hover": {
-                  transform: "scale(1.02)", // slight zoom
-                  boxShadow: "0px 4px 10px rgba(32, 192, 69, 0.72)", // optional pop shadow
-                  zIndex: 10, // ensures it comes above others
+                  transform: "scale(1.15)", 
+                  boxShadow: "1px 0px 1px 3px rgba(40, 40, 41, 0.34)", 
+                  zIndex: 10, 
                 },
               }}
               onClick={() => selectPlayerForAuction(player)}

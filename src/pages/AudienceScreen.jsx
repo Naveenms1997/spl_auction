@@ -90,18 +90,20 @@ const AudienceScreen = () => {
       <Stack
         sx={{
           height: 80,
-          borderBottom: "2px solid red",
+          borderBottom: "1px solid #fff",
+              boxShadow:
+                              "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
           padding: 4,
-          backgroundColor: "red",
+          backgroundColor: "#0a163dd6",
         }}
         alignItems={"center"}
       >
-        <Stack direction={"row"} alignItems={"center"} spacing={2}>
+        <Stack width={"100%"} direction={"row"} alignItems={"center"} justifyContent={"space-around"} spacing={4}>
           <Box>
             <img src={splLogo} alt="icon" style={{ width: 100, height: 100 }} />
           </Box>
-          <Typography variant="h3" sx={{ color: "#fff", fontWeight: "bold" }}>
-            SPL Auction Live Bidding
+          <Typography variant="h2" sx={{ color: "#fff", fontWeight: "bold" }}>
+            SPL-3 Auction
           </Typography>
           <Box>
             <img src={splLogo} alt="icon" style={{ width: 100, height: 100 }} />
@@ -377,7 +379,7 @@ const AudienceScreen = () => {
             </Box>
 
             {/* Teams Details */}
-            <Stack sx={{ width: "60%" }} spacing={4}>
+            <Stack sx={{ width: "60%" }} spacing={2}>
               <Card
                 sx={{
                   boxShadow: "0 2px 10px rgba(0, 0, 0, 0.2)", // soft shadow
@@ -444,22 +446,18 @@ const AudienceScreen = () => {
                     </Stack>
                     <Stack padding={2} width={"50%"}>
                       {getHighestBid() ? (
-                        <TextInfo
-                          type={
-                            <Chip
-                              label={"Highest Bid"}
-                              variant="filled"
-                              color="warning"
-                              icon={<HailIcon />}
-                            />
-                          }
-                          value={
-                            <Typography variant="subtitle1">
-                              {getHighestBid()?.name} {"-"}{" "}
-                              {getHighestBid()?.finalBidAmount}
-                            </Typography>
-                          }
-                        />
+                        <Stack direction={"row"} alignItems={"flex-end"} justifyContent={"flex-start"} spacing={4}> 
+                                <Chip
+                               label={"Highest Bid"}
+                               variant="filled"
+                               color="warning"
+                               icon={<HailIcon />}
+                             />
+                                   <Typography variant="h6">
+                               {getHighestBid()?.name} {"-"}{" "}
+                               {getHighestBid()?.finalBidAmount}
+                             </Typography>
+                        </Stack>
                       ) : null}
                     </Stack>
                   </Stack>
@@ -472,8 +470,7 @@ const AudienceScreen = () => {
                     <TeamsCardBiddingPanel
                       sx={{
                         minHeight: 120,
-                        color: "#fff",
-                        borderRadius: 4,
+                        borderRadius: 2,
                       }}
                       team={team}
                     />

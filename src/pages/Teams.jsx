@@ -21,17 +21,9 @@ function Teams() {
     audienceScreen,
   } = state || {};
 
-  const getHighestBid = () => {
-    if (soldPlayers?.length) {
-      const highestBidPlayer = soldPlayers?.reduce((max, player) =>
-        player.finalBidAmount > max.finalBidAmount ? player : max
-      );
-      return highestBidPlayer;
-    }
-  };
   return (
     <Box sx={{ padding: 2, height: "100%" }}>
-      <Stack spacing={2}>
+      <Stack spacing={1}>
         <Card
           sx={{
             boxShadow: "0 2px 10px rgba(0, 0, 0, 0.2)", // soft shadow
@@ -44,8 +36,8 @@ function Teams() {
             justifyContent={"flex-start"}
           >
             <Stack
-              padding={2}
-              backgroundColor={"#ef9103ff"}
+              padding={1}
+              backgroundColor={"#ef9103e7"}
               width={"100%"}
               alignItems={"center"}
             >
@@ -57,22 +49,22 @@ function Teams() {
               width={"100%"}
               alignItems={"flex-start"}
               justifyContent={"space-evenly"}
-              padding={2}
+              padding={1}
             >
               <Chip
-                label={`Remaining Players : ${availablePlayers?.length || 0}`}
-                variant="filled"
-                color="success"
+                label={<Typography variant="subtitle1">{`Remaining Players : ${availablePlayers?.length || 0}`}</Typography>}
+                variant="outlined"
+                color="info"
                 icon={<GroupAddRoundedIcon />}
               />
               <Chip
-                label={`Sold Players : ${soldPlayers?.length || 0}`}
+                label={<Typography variant="subtitle1">{`Sold Players : ${soldPlayers?.length || 0}`}</Typography>}
                 variant="filled"
                 color="success"
                 icon={<GavelIcon />}
               />
               <Chip
-                label={`Unsold Players : ${unsoldPlayers?.length || 0}`}
+                label={<Typography variant="subtitle1">{`Unsold Players : ${unsoldPlayers?.length || 0}`}</Typography>}
                 variant="outlined"
                 color="error"
                 icon={<DoNotDisturbAltIcon />}
@@ -84,12 +76,12 @@ function Teams() {
         <Stack direction={"column"} spacing={1} justifyContent={"flex-start"}>
           <Stack
             padding={1}
-            backgroundColor={"#0814f0ff"}
+            backgroundColor={"#0814f0d0"}
             alignItems={"center"}
             borderRadius={2}
           >
-            <Typography variant="h6" color="#fff">
-              TEAMS SQUAD
+            <Typography variant="h5" color="#fff">
+              SQUADS
             </Typography>
           </Stack>
 

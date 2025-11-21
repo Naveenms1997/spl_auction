@@ -12,7 +12,7 @@ function TeamSquad({ team }) {
       }}
     >
       <Stack
-        backgroundColor={"#0e1027ff"}
+        backgroundColor={"#129c9599"}
         width={"100%"}
         direction={"row"}
         alignItems={"center"}
@@ -26,7 +26,7 @@ function TeamSquad({ team }) {
             style={{ width: 40, height: 40 }}
           />
         </Stack>
-        <Typography variant="h6" color="#fff">
+        <Typography variant="h6" color="#000">
           {team.name}
         </Typography>
       </Stack>
@@ -34,10 +34,9 @@ function TeamSquad({ team }) {
       <Stack
         direction={"column"}
         spacing={1}
-        padding={1}
+        padding={2}
         alignItems={"flex-start"}
         justifyContent={"flex-start"}
-        paddingLeft={2}
       >
         {team?.selectedPlayers.map((player, i) => {
           return (
@@ -46,18 +45,26 @@ function TeamSquad({ team }) {
               alignItems={"center"}
               justifyContent={"flex-start"}
               spacing={1}
+              width={"100%"}
             >
               <Typography variant="subtitle1">{`${i + 1}.`}</Typography>
               <Chip
                 avatar={
                   <Avatar alt={player.name} src={getImageUrl(player.photo)} />
                 }
-                label={player.name}
+                label={
+                  <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>
+                    {player.name}
+                  </Typography>
+                }
                 sx={{
                   backgroundColor: "#d6d6d694",
                   color: "#000",
                   fontWeight: "bold",
                   border: "1px solid #161d15b5",
+                  width: "100%",
+                  justifyContent: "flex-start",
+                  pl: 1,
                 }}
               />
             </Stack>

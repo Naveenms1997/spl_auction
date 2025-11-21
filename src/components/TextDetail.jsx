@@ -1,7 +1,6 @@
 import { Grid, Stack, Typography } from "@mui/material";
 
-
-const TextInfo = ({ type, value, secondaryValue = null }) => {
+const TextInfo = ({ type, uiType, value, secondaryValue = null }) => {
   return (
     <Grid
       container
@@ -11,13 +10,15 @@ const TextInfo = ({ type, value, secondaryValue = null }) => {
       alignItems={"center"}
     >
       <Grid size={6} item md={4}>
-        <Typography
-          variant="subtitle2"
-          component="div"
-          sx={{ color: "text.secondary" }}
-        >
-          {type}
-        </Typography>
+        {uiType || (
+          <Typography
+            variant="subtitle2"
+            component="div"
+            sx={{ color: "text.secondary" }}
+          >
+            {type}
+          </Typography>
+        )}
       </Grid>
       <Grid item md={5}>
         <Stack
@@ -43,4 +44,4 @@ const TextInfo = ({ type, value, secondaryValue = null }) => {
   );
 };
 
-export default TextInfo
+export default TextInfo;

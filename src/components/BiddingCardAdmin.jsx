@@ -165,13 +165,13 @@ function BiddingCardAdmin({ player }) {
   };
 
   const restartBid = () => {
-     const updatedPlayer = {
-        ...ongoingAuction.player,
-        team: null,
-        currentBid: null,
-        finalBidAmount: null,
-        bidResult: "AVAILABLE",
-      };
+    const updatedPlayer = {
+      ...ongoingAuction.player,
+      team: null,
+      currentBid: null,
+      finalBidAmount: null,
+      bidResult: "AVAILABLE",
+    };
 
     if (ongoingAuction?.isSold) {
       const updatedTeam = ongoingAuction.currentBiddingTeam;
@@ -205,7 +205,9 @@ function BiddingCardAdmin({ player }) {
           currentBidAmount: null,
           currentBiddingTeam: null,
         },
-        unsoldPlayers: state.unsoldPlayers.filter((p) => p.id !== updatedPlayer.id),
+        unsoldPlayers: state.unsoldPlayers.filter(
+          (p) => p.id !== updatedPlayer.id
+        ),
         availablePlayers: [...state.availablePlayers, updatedPlayer],
       });
     }
@@ -321,7 +323,6 @@ function BiddingCardAdmin({ player }) {
         sx={{
           display: "flex",
           minHeight: 150,
-          // alignItems: "center",
           boxSizing: "border-box",
           boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)", // soft shadow
           justifyContent: "flex-start",
@@ -329,19 +330,6 @@ function BiddingCardAdmin({ player }) {
         }}
       >
         <Stack spacing={2} direction="column">
-          {/* <TextField
-            placeholder="Amount"
-            type="number"
-            variant="outlined"
-            value={
-              ongoingAuction.currentBidAmount !== null
-                ? ongoingAuction.currentBidAmount
-                : null
-            }
-            onWheel={(e) => e.target.blur()}
-            onChange={(e) => updateState({ amount: Number(e.target.value) })}
-          /> */}
-
           <Grid container spacing={2}>
             {teams.map((team) => {
               const isDisabled =
