@@ -409,13 +409,15 @@ const AudienceScreen = () => {
                         type={
                           <Chip
                             label={"Remaining Players"}
-                            variant="filled"
-                            color="success"
+                            variant="outlined"
+                            color="info"
                             icon={<GroupAddRoundedIcon />}
                           />
                         }
-                        value={availablePlayers?.length || 0}
-                        secondaryValue={players?.length || 0}
+                        value={<Stack direction={"row"} alignItems={"flex-end"} justifyContent={"flex-start"} spacing={1}>
+                          <Typography variant="h4" sx={{color:"#0d939fff"}}>{availablePlayers?.length || 0}</Typography>
+                          <Typography variant="h6" sx={{color:"#0d939fff"}}>/{players?.length || 0}</Typography>
+                        </Stack>}
                       />
                       <TextInfo
                         type={
@@ -426,7 +428,7 @@ const AudienceScreen = () => {
                             icon={<GavelIcon />}
                           />
                         }
-                        value={soldPlayers?.length || 0}
+                        value={<Typography variant="h4" sx={{color:"#03520bff"}}>{soldPlayers?.length || 0}</Typography>}
                       />
                       <TextInfo
                         type={
@@ -437,7 +439,7 @@ const AudienceScreen = () => {
                             icon={<DoNotDisturbAltIcon />}
                           />
                         }
-                        value={unsoldPlayers?.length || 0}
+                        value={<Typography variant="h4" sx={{color:"#f80606ff"}}>{unsoldPlayers?.length || 0}</Typography>}
                       />
                     </Stack>
                     <Stack padding={2} width={"50%"}>
@@ -447,7 +449,7 @@ const AudienceScreen = () => {
                             <Chip
                               label={"Highest Bid"}
                               variant="filled"
-                              color="success"
+                              color="warning"
                               icon={<HailIcon />}
                             />
                           }
