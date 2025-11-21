@@ -1,7 +1,7 @@
 import { Grid, Stack, Typography } from "@mui/material";
 
 
-const TextComponent = ({ type, value, secondaryValue = null }) => {
+const TextInfo = ({ type, value, secondaryValue = null }) => {
   return (
     <Grid
       container
@@ -16,7 +16,7 @@ const TextComponent = ({ type, value, secondaryValue = null }) => {
           component="div"
           sx={{ color: "text.secondary" }}
         >
-          {type} {" :"}
+          {type}
         </Typography>
       </Grid>
       <Grid item md={5}>
@@ -43,4 +43,4 @@ const TextComponent = ({ type, value, secondaryValue = null }) => {
   );
 };
 
-export default TextComponent
+export default TextInfo

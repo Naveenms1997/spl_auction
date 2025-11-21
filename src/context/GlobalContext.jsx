@@ -7,7 +7,12 @@ const GlobalContext = createContext();
 //   player:players[0], // full player data
 //   currentBiddingTeam:null, // or team
 //   currentBidAmount:null, // will start with base price,
+//   isSold:false,
+//   isUnsold:false,
+//   
 // }
+
+// bidResult = AVAILABLE || SOLD || UNSOLD
 
 const initialState = {
   ongoingAuction: null,
@@ -17,6 +22,7 @@ const initialState = {
   availablePlayers: players,
   unsoldPlayers: [],
   soldPlayers: [],
+  eventStatus: "NEXT_PLAYER", // "NEXT_PLAYER" | "ONGOING"
 };
 
 export function GlobalProvider({ children }) {
