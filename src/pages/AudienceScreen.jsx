@@ -37,7 +37,7 @@ import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import Teams from "./Teams";
 
 const AudienceScreen = () => {
-  const { state, updateState } = useAppContext();
+  const { state } = useAppContext();
   const {
     ongoingAuction,
     teams,
@@ -67,10 +67,6 @@ const AudienceScreen = () => {
       if (ongoingAuction?.isUnsold) {
         playUnsoldSound();
       }
-      // updateState({
-      //   ongoingAuction: { ...ongoingAuction, playSoundAnime: false },
-      //   from:"nanu"
-      // });
     }
   }, [ongoingAuction]);
 
@@ -86,7 +82,10 @@ const AudienceScreen = () => {
   return (
     <Box
       className={styles.container}
-      sx={{ backgroundImage: `url(${backgroundImg})` }}
+      sx={{
+        backgroundImage:
+          "url(https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737272/audience_screen_bgv_ogj1c2.jpg)",
+      }}
     >
       <Stack
         sx={{
