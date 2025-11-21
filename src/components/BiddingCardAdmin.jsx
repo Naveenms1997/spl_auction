@@ -165,20 +165,21 @@ function BiddingCardAdmin({ player }) {
   };
 
   const restartBid = () => {
-    if (ongoingAuction?.isSold) {
-      const updatedTeam = {
-        ...ongoingAuction.currentBiddingTeam,
+     const updatedPlayer = {
+        ...ongoingAuction.player,
+        team: null,
+        currentBid: null,
+        finalBidAmount: null,
+        bidResult: "AVAILABLE",
       };
 
+    if (ongoingAuction?.isSold) {
+      const updatedTeam = ongoingAuction.currentBiddingTeam;
       updateState({
         ongoingAuction: {
           ...ongoingAuction,
           player: {
-            ...ongoingAuction.player,
-            team: null,
-            currentBid: null,
-            finalBidAmount: null,
-            bidResult: "AVAILABLE",
+            ...updatedPlayer,
           },
           isSold: false,
           isUnsold: false,
@@ -186,6 +187,8 @@ function BiddingCardAdmin({ player }) {
           currentBiddingTeam: null,
         },
         teams: teams.map((t) => (t.id === updatedTeam.id ? updatedTeam : t)),
+        soldPlayers: state.soldPlayers.filter((p) => p.id !== updatedPlayer.id),
+        availablePlayers: [...state.availablePlayers, updatedPlayer],
       });
     } else {
       updateState({
@@ -202,6 +205,8 @@ function BiddingCardAdmin({ player }) {
           currentBidAmount: null,
           currentBiddingTeam: null,
         },
+        unsoldPlayers: state.unsoldPlayers.filter((p) => p.id !== updatedPlayer.id),
+        availablePlayers: [...state.availablePlayers, updatedPlayer],
       });
     }
   };
@@ -243,7 +248,7 @@ function BiddingCardAdmin({ player }) {
           >
             <Stack spacing={2}>
               <Typography variant="h3">{player.name}</Typography>
-              <Stack direction={"row"} alignItems={"center"} spacing={2} >
+              <Stack direction={"row"} alignItems={"center"} spacing={2}>
                 <Typography variant="h5">Current Bid : </Typography>
                 <Typography variant="h4">
                   {ongoingAuction.currentBidAmount !== null
@@ -301,7 +306,7 @@ function BiddingCardAdmin({ player }) {
                     startIcon={<RotateLeftIcon />}
                     onClick={restartBid}
                   >
-                    RESET
+                    Restart
                   </Button>
                 </Grid>
               </Grid>
@@ -336,7 +341,7 @@ function BiddingCardAdmin({ player }) {
             onWheel={(e) => e.target.blur()}
             onChange={(e) => updateState({ amount: Number(e.target.value) })}
           /> */}
-          
+
           <Grid container spacing={2}>
             {teams.map((team) => {
               const isDisabled =

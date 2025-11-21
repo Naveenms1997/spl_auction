@@ -1,26 +1,19 @@
 import React from "react";
 import { useAppContext } from "../context/GlobalContext";
-import {
-  Box,
-  Button,
-  Card,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Card, Grid, Stack, Typography } from "@mui/material";
 import BiddingCardAdmin from "../components/BiddingCardAdmin";
 import ChoosePlayer from "../components/ChoosePlayer";
 import AudienceScreens from "../components/AudienceScreens";
 
 export default function AdminPage() {
   const { state, updateState, resetGlobalState } = useAppContext();
-  const { ongoingAuction , eventStatus, } = state || {};
+  const { ongoingAuction, eventStatus } = state || {};
 
-  const chooseNextPlayer = ()=>{
+  const chooseNextPlayer = () => {
     updateState({
       eventStatus: "NEXT_PLAYER",
-    })
-  }
+    });
+  };
 
   return (
     <Box padding={4}>
@@ -65,9 +58,8 @@ export default function AdminPage() {
         </Card>
 
         {/* AUDIENCE SCREEN ACTION */}
-        <Stack sx={{width: "20%"}}>
-
-        <AudienceScreens />
+        <Stack sx={{ width: "20%" }}>
+          <AudienceScreens />
         </Stack>
       </Stack>
     </Box>
