@@ -47,8 +47,14 @@ const getNextBidAmount = (currentAmount) => {
 
 function BiddingCardAdmin({ player }) {
   const { state, updateState, resetGlobalState } = useAppContext();
-  const { ongoingAuction, basePrice, players, teams, availablePlayers } =
-    state || {};
+  const {
+    ongoingAuction,
+    basePrice,
+    players,
+    teams,
+    availablePlayers,
+    auctionRules,
+  } = state || {};
 
   const selectPlayerForAuction = (player) => {
     updateState({
@@ -86,22 +92,22 @@ function BiddingCardAdmin({ player }) {
   const soldPlayerToTeam = () => {
     const boughtTeam = ongoingAuction.currentBiddingTeam;
     const budgetLeftAfterBid =
-      boughtTeam.budgetLeft - ongoingAuction.currentBidAmount; // 4950
-    const requiuredPlayersAfterBid = boughtTeam.requiuredPlayers - 1; // 14
+      boughtTeam.budgetLeft - ongoingAuction.currentBidAmount;
+    const requiuredPlayersAfterBid = boughtTeam.requiuredPlayers - 1;
 
     const budgetForBasePricePurchase =
-      (requiuredPlayersAfterBid - 1) * basePrice; // 650
+      (requiuredPlayersAfterBid - 1) * basePrice;
     const budgetAfterBasePricePurchase =
-      budgetLeftAfterBid - budgetForBasePricePurchase; // 4300
+      budgetLeftAfterBid - budgetForBasePricePurchase;
 
     const lowerBidPointerValue = getBidPointerAmount(
       budgetAfterBasePricePurchase
-    ); // 2000
+    );
     const valueToGetReminder =
-      budgetAfterBasePricePurchase - lowerBidPointerValue; // 2300
-    const bidStepAmount = getBidStepAmount(budgetAfterBasePricePurchase); // 100<
-    const reminderValue = valueToGetReminder % bidStepAmount; // 0
-    const finalMaxBidPerPlayer = budgetAfterBasePricePurchase - reminderValue; //
+      budgetAfterBasePricePurchase - lowerBidPointerValue;
+    const bidStepAmount = getBidStepAmount(budgetAfterBasePricePurchase);
+    const reminderValue = valueToGetReminder % bidStepAmount;
+    const finalMaxBidPerPlayer = budgetAfterBasePricePurchase - reminderValue;
 
     const updatedPlayer = {
       ...ongoingAuction.player,
@@ -122,7 +128,7 @@ function BiddingCardAdmin({ player }) {
     };
 
     updateState({
-      ongoingAuction: { ...ongoingAuction, isSold: true },
+      ongoingAuction: { ...ongoingAuction, isSold: true, playSoundAnime: true },
       players: players.map((p) =>
         p.id === updatedPlayer.id ? updatedPlayer : p
       ),
@@ -131,8 +137,8 @@ function BiddingCardAdmin({ player }) {
       availablePlayers: state.availablePlayers.filter(
         (p) => p.id !== updatedPlayer.id
       ),
+      isSold: true,
     });
-    // logic to mark player as sold to the team
   };
 
   const unsoldPlayer = () => {
@@ -142,35 +148,62 @@ function BiddingCardAdmin({ player }) {
     };
 
     updateState({
-      ongoingAuction: { ...ongoingAuction, isUnsold: true },
+      ongoingAuction: {
+        ...ongoingAuction,
+        isUnsold: true,
+        playSoundAnime: true,
+      },
       players: players.map((p) =>
         p.id === updatedPlayer.id ? updatedPlayer : p
       ),
-      // teams: teams.map((t) => (t.id === updatedTeam.id ? updatedTeam : t)),
-      // soldPlayers: [...state.soldPlayers, updatedPlayer],
       availablePlayers: state.availablePlayers.filter(
         (p) => p.id !== updatedPlayer.id
       ),
       unsoldPlayers: [...state.unsoldPlayers, updatedPlayer],
+      isUnsold: true,
     });
   };
 
   const restartBid = () => {
-    updateState({
-      ongoingAuction: {
-        ...ongoingAuction,
-        player: {
-          ...ongoingAuction.player,
-          team: null,
-          currentBid: null,
-          bidResult: "AVAILABLE",
+    if (ongoingAuction?.isSold) {
+      const updatedTeam = {
+        ...ongoingAuction.currentBiddingTeam,
+      };
+
+      updateState({
+        ongoingAuction: {
+          ...ongoingAuction,
+          player: {
+            ...ongoingAuction.player,
+            team: null,
+            currentBid: null,
+            finalBidAmount: null,
+            bidResult: "AVAILABLE",
+          },
+          isSold: false,
+          isUnsold: false,
+          currentBidAmount: null,
+          currentBiddingTeam: null,
         },
-        isSold: false,
-        isUnsold: false,
-        currentBidAmount: null,
-        currentBiddingTeam: null,
-      },
-    });
+        teams: teams.map((t) => (t.id === updatedTeam.id ? updatedTeam : t)),
+      });
+    } else {
+      updateState({
+        ongoingAuction: {
+          ...ongoingAuction,
+          player: {
+            ...ongoingAuction.player,
+            team: null,
+            currentBid: null,
+            bidResult: "AVAILABLE",
+          },
+          isSold: false,
+          isUnsold: false,
+          currentBidAmount: null,
+          currentBiddingTeam: null,
+        },
+      });
+    }
   };
 
   return player ? (
@@ -208,8 +241,16 @@ function BiddingCardAdmin({ player }) {
             direction={"row"}
             justifyContent={"space-between"}
           >
-            <Stack>
-              <Typography variant="h4">{player.name}</Typography>
+            <Stack spacing={2}>
+              <Typography variant="h3">{player.name}</Typography>
+              <Stack direction={"row"} alignItems={"center"} spacing={2} >
+                <Typography variant="h5">Current Bid : </Typography>
+                <Typography variant="h4">
+                  {ongoingAuction.currentBidAmount !== null
+                    ? ongoingAuction.currentBidAmount
+                    : "....."}
+                </Typography>
+              </Stack>
             </Stack>
             <Stack paddingRight={2}>
               <Grid
@@ -283,7 +324,7 @@ function BiddingCardAdmin({ player }) {
         }}
       >
         <Stack spacing={2} direction="column">
-          <TextField
+          {/* <TextField
             placeholder="Amount"
             type="number"
             variant="outlined"
@@ -294,10 +335,12 @@ function BiddingCardAdmin({ player }) {
             }
             onWheel={(e) => e.target.blur()}
             onChange={(e) => updateState({ amount: Number(e.target.value) })}
-          />
+          /> */}
+          
           <Grid container spacing={2}>
             {teams.map((team) => {
               const isDisabled =
+                team.playersBought === auctionRules?.maxPlayersPerTeam ||
                 ongoingAuction?.isUnsold ||
                 (ongoingAuction?.isSold &&
                   ongoingAuction?.currentBiddingTeam.id !== team.id);

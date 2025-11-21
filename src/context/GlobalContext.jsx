@@ -9,7 +9,7 @@ const GlobalContext = createContext();
 //   currentBidAmount:null, // will start with base price,
 //   isSold:false,
 //   isUnsold:false,
-//   
+//   playSoundAnime:false
 // }
 
 // bidResult = AVAILABLE || SOLD || UNSOLD
@@ -23,6 +23,10 @@ const initialState = {
   unsoldPlayers: [],
   soldPlayers: [],
   eventStatus: "NEXT_PLAYER", // "NEXT_PLAYER" | "ONGOING"
+  audienceScreen: "AUCTION_PANEL", // AUCTION_PANEL | TEAMS
+  auctionRules: {
+    maxPlayersPerTeam: 15,
+  },
 };
 
 export function GlobalProvider({ children }) {
@@ -65,7 +69,6 @@ export function GlobalProvider({ children }) {
     setState((prev) => {
       const updated = { ...prev, ...newValues };
       // Save to main process for other windows
-      
 
       window.electronAPI?.send("context-update", updated);
       return updated;

@@ -3,12 +3,12 @@
     "id": "royal_hunters",
     "name": "Royal Hunters",
     "logo": "royal_hunters.jpg",
-    "playersBought": 1,
-    "requiuredPlayers": 14,
-    "totalSpent": 60,
-    "budgetLeft": 4940,
-    "maxBidPerPlayer": 4200,
-    "selectedPlayers": [{}]
+    "playersBought": 0,
+    "requiuredPlayers": 15,
+    "totalSpent": 0,
+    "budgetLeft": 5000,
+    "maxBidPerPlayer": 4300,
+    "selectedPlayers": []
   },
   {
     "id": "raj_diamonds",
