@@ -43,13 +43,12 @@ function TeamSquad({ team }) {
           return (
             <Stack
               direction={"row"}
-              alignItems={"flex-start"}
+              alignItems={"center"}
               justifyContent={"flex-start"}
               spacing={1}
             >
               <Typography variant="subtitle1">{`${i + 1}.`}</Typography>
               <Chip
-                //   variant="outlined"
                 avatar={
                   <Avatar alt={player.name} src={getImageUrl(player.photo)} />
                 }
