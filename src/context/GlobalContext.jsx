@@ -19,7 +19,7 @@ const initialState = {
   players: players,
   teams: teams,
   basePrice: 50,
-  availablePlayers: players,
+  availablePlayers: players.map((p) => p.id),
   unsoldPlayers: [],
   soldPlayers: [],
   eventStatus: "NEXT_PLAYER", // "NEXT_PLAYER" | "ONGOING"
@@ -79,8 +79,13 @@ export function GlobalProvider({ children }) {
     setState(initialState);
   };
 
+  const getPlayerData = (id) => {
+    const player = state.players.find((p) => p.id === id);
+    return player;
+  };
+
   return (
-    <GlobalContext.Provider value={{ state, updateState, resetGlobalState }}>
+    <GlobalContext.Provider value={{ state, updateState, resetGlobalState, getPlayerData }}>
       {children}
     </GlobalContext.Provider>
   );

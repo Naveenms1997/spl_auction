@@ -70,14 +70,14 @@ const AudienceScreen = () => {
     }
   }, [ongoingAuction]);
 
-  const getHighestBid = () => {
-    if (soldPlayers?.length) {
-      const highestBidPlayer = soldPlayers?.reduce((max, player) =>
-        player.finalBidAmount > max.finalBidAmount ? player : max
-      );
-      return highestBidPlayer;
-    }
-  };
+  // const getHighestBid = () => {
+  //   if (soldPlayers?.length) {
+  //     const highestBidPlayer = soldPlayers?.reduce((max, player) =>
+  //       player.finalBidAmount > max.finalBidAmount ? player : max
+  //     );
+  //     return highestBidPlayer;
+  //   }
+  // };
 
   return (
     <Box
@@ -444,7 +444,7 @@ const AudienceScreen = () => {
                         value={<Typography variant="h4" sx={{color:"#f80606ff"}}>{unsoldPlayers?.length || 0}</Typography>}
                       />
                     </Stack>
-                    <Stack padding={2} width={"50%"}>
+                    {/* <Stack padding={2} width={"50%"}>
                       {getHighestBid() ? (
                         <Stack direction={"row"} alignItems={"flex-end"} justifyContent={"flex-start"} spacing={4}> 
                                 <Chip
@@ -459,7 +459,7 @@ const AudienceScreen = () => {
                              </Typography>
                         </Stack>
                       ) : null}
-                    </Stack>
+                    </Stack> */}
                   </Stack>
                 </Stack>
               </Card>

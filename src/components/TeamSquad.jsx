@@ -1,8 +1,16 @@
 import { Avatar, Box, Card, Chip, Stack, Typography } from "@mui/material";
 import React from "react";
 import { getImageUrl } from "../utils/images";
+import { useAppContext } from "../context/GlobalContext";
 
 function TeamSquad({ team }) {
+    const { state, updateState, getPlayerData } = useAppContext();
+    const { players } = state || {};
+  
+  const selectedPlayers = players.filter(p=>{
+    return team.selectedPlayers.includes(p.id); 
+  })
+
   return (
     <Card
       sx={{
@@ -38,7 +46,12 @@ function TeamSquad({ team }) {
         alignItems={"flex-start"}
         justifyContent={"flex-start"}
       >
-        {team?.selectedPlayers.map((player, i) => {
+        {(
+          [
+            ...selectedPlayers||[],
+            ...Array(15 - (selectedPlayers.length||0)).fill(null),
+          ] || []
+        ).map((player, i) => {
           return (
             <Stack
               direction={"row"}
@@ -47,21 +60,25 @@ function TeamSquad({ team }) {
               spacing={1}
               width={"100%"}
             >
-              <Typography variant="subtitle1">{`${i + 1}.`}</Typography>
+              <Typography variant="subtitle1" >{`${i + 1}.`}</Typography>
               <Chip
                 avatar={
-                  <Avatar alt={player.name} src={getImageUrl(player.photo)} />
+                  player ? (
+                    <Avatar alt={player.name} src={getImageUrl(player.photo)} />
+                  ) : undefined
                 }
                 label={
                   <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>
-                    {player.name}
+                    {player ? player.name : ""}
                   </Typography>
                 }
                 sx={{
-                  backgroundColor: "#d6d6d694",
+                  backgroundColor: player ? "#d6d6d694" : "#ebeaea4d",
                   color: "#000",
                   fontWeight: "bold",
-                  border: "1px solid #161d15b5",
+                  border: player
+                    ? "1px solid #161d15b5"
+                    : "1px solid #242b2222",
                   width: "100%",
                   justifyContent: "flex-start",
                   pl: 1,

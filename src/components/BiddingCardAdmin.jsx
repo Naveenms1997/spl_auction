@@ -112,7 +112,7 @@ function BiddingCardAdmin({ player }) {
     const updatedPlayer = {
       ...ongoingAuction.player,
       finalBidAmount: ongoingAuction.currentBidAmount,
-      team: boughtTeam,
+      team: boughtTeam.id,
       currentBid: null,
       bidResult: "SOLD",
     };
@@ -124,7 +124,7 @@ function BiddingCardAdmin({ player }) {
       playersBought: boughtTeam.playersBought + 1,
       requiuredPlayers: requiuredPlayersAfterBid,
       maxBidPerPlayer: finalMaxBidPerPlayer,
-      selectedPlayers: [...boughtTeam.selectedPlayers, updatedPlayer],
+      selectedPlayers: [...boughtTeam.selectedPlayers, updatedPlayer.id],
     };
 
     updateState({
@@ -133,9 +133,9 @@ function BiddingCardAdmin({ player }) {
         p.id === updatedPlayer.id ? updatedPlayer : p
       ),
       teams: teams.map((t) => (t.id === updatedTeam.id ? updatedTeam : t)),
-      soldPlayers: [...state.soldPlayers, updatedPlayer],
+      soldPlayers: [...state.soldPlayers, updatedPlayer.id],
       availablePlayers: state.availablePlayers.filter(
-        (p) => p.id !== updatedPlayer.id
+        (id) => id !== updatedPlayer.id
       ),
       isSold: true,
     });
@@ -157,9 +157,9 @@ function BiddingCardAdmin({ player }) {
         p.id === updatedPlayer.id ? updatedPlayer : p
       ),
       availablePlayers: state.availablePlayers.filter(
-        (p) => p.id !== updatedPlayer.id
+        (id) => id !== updatedPlayer.id
       ),
-      unsoldPlayers: [...state.unsoldPlayers, updatedPlayer],
+      unsoldPlayers: [...state.unsoldPlayers, updatedPlayer.id],
       isUnsold: true,
     });
   };
@@ -187,8 +187,8 @@ function BiddingCardAdmin({ player }) {
           currentBiddingTeam: null,
         },
         teams: teams.map((t) => (t.id === updatedTeam.id ? updatedTeam : t)),
-        soldPlayers: state.soldPlayers.filter((p) => p.id !== updatedPlayer.id),
-        availablePlayers: [...state.availablePlayers, updatedPlayer],
+        soldPlayers: state.soldPlayers.filter((id) => id !== updatedPlayer.id),
+        availablePlayers: [...state.availablePlayers, updatedPlayer.id],
       });
     } else {
       updateState({
@@ -206,9 +206,9 @@ function BiddingCardAdmin({ player }) {
           currentBiddingTeam: null,
         },
         unsoldPlayers: state.unsoldPlayers.filter(
-          (p) => p.id !== updatedPlayer.id
+          (id) => id !== updatedPlayer.id
         ),
-        availablePlayers: [...state.availablePlayers, updatedPlayer],
+        availablePlayers: [...state.availablePlayers, updatedPlayer.id],
       });
     }
   };

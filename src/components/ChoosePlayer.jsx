@@ -5,13 +5,14 @@ import mysteryCard from "../assets/images/mysteryCard2.png";
 import { useAppContext } from "../context/GlobalContext";
 
 function ChoosePlayer() {
-  const { state, updateState } = useAppContext();
+  const { state, updateState, getPlayerData } = useAppContext();
   const { availablePlayers } = state || {};
 
   const selectPlayerForAuction = (player) => {
+    const playerData = getPlayerData(player)
     updateState({
       ongoingAuction: {
-        player: player,
+        player: playerData,
         currentBiddingTeam: null,
         currentBidAmount: null,
       },
@@ -42,7 +43,7 @@ function ChoosePlayer() {
         >
           {shuffleArray(availablePlayers).map((player) => (
             <Box
-              key={player.id}
+              key={player}
               sx={{
                 borderRadius: "8px",
                 transition: "transform 0.25s ease, box-shadow 0.25s ease",
