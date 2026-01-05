@@ -8,7 +8,7 @@ import UnsoldPlayers from "./UnsoldPlayers";
 
 export default function AdminPage() {
   const { state, updateState, resetGlobalState } = useAppContext();
-  const { ongoingAuction, eventStatus, players, unsoldPlayers } = state || {};
+  const { ongoingAuction, eventStatus, players, unsoldPlayers, availablePlayers } = state || {};
 
   const [openUnsoldPlayer, setOpenUnsoldPlayer] = useState(false);
 
@@ -22,17 +22,10 @@ export default function AdminPage() {
   };
 
   const makeUnsoldPlayersAvailable = () => {
-    const unsoldPlayersData = unsoldPlayers.map((playerId, i) => {
+    const formattedUnsoldPlayersData = unsoldPlayers.map((playerId) => {
       const playerData = players.find((p) => p.id === playerId);
-      return { ...playerData };
+      return { ...playerData, bidResult: "AVAILABLE" };
     });
-
-    const formattedUnsoldPlayersData = unsoldPlayersData.map(
-      (player, index) => ({
-        ...player,
-        bidResult: "AVAILABLE",
-      })
-    );
 
     const formattedPlayersList = players.map((p) => {
       const updatedPlayer = formattedUnsoldPlayersData.find(
@@ -45,7 +38,7 @@ export default function AdminPage() {
       players: formattedPlayersList,
       availablePlayers: [
         ...state.availablePlayers,
-        ...formattedUnsoldPlayersData,
+        ...formattedUnsoldPlayersData.map((p) => p.id),
       ],
       unsoldPlayers: [],
     });
@@ -82,6 +75,7 @@ export default function AdminPage() {
                 variant="outlined"
                 color="secondary"
                 onClick={() => setOpenUnsoldPlayer(true)}
+                disabled={availablePlayers.length !== 0}
               >
                 Unsold players
               </Button>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { mysteryCard, audienceScreenBg } from "../assets/index";
+import { mysteryPlayer, audienceScreenBg } from "../assets/index";
 import { splLogo } from "../assets/index";
 import styles from "./AudienceScreen.module.css";
 import {
@@ -153,10 +153,10 @@ const AudienceScreen = () => {
                           alt="Remy Sharp"
                           src={
                             eventStatus === "NEXT_PLAYER"
-                              ? mysteryCard
+                              ? mysteryPlayer
                               : ongoingAuction
                               ? ongoingAuction?.player.photo
-                              : mysteryCard
+                              : mysteryPlayer
                           }
                           sx={{
                             width: 280,
