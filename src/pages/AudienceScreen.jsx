@@ -1,36 +1,29 @@
-import React, { useEffect } from "react";
-import backgroundImg from "../assets/images/audience_screen_bgv4.jpeg";
-import player from "../assets/images/mysteryCard2.png";
-import splLogo from "../assets/images/spl_logo.jpg";
+import { useEffect } from "react";
+import { mysteryCard, audienceScreenBg } from "../assets/index";
+import { splLogo } from "../assets/index";
 import styles from "./AudienceScreen.module.css";
 import {
   Avatar,
   Box,
   Card,
   Chip,
-  Divider,
   Grid,
   Stack,
   Typography,
 } from "@mui/material";
 import NeonCard from "../components/NeonCard";
 import { useAppContext } from "../context/GlobalContext";
-// import teams from "../data/teams.json";
-import { getImageUrl } from "../utils/images";
 import TeamsCardBiddingPanel from "../components/TeamsCardBiddingPanel";
 import auctionHammerAnimation from "../assets/animations/auction_hammer.json";
 import errorAnimation from "../assets/animations/error.json";
 import questionMarkAnimation from "../assets/animations/questionMark.json";
 import confettiAnimation from "../assets/animations/confetti.json";
 import Lottie from "lottie-react";
-// import players from "../data/players.json";
 import useSound from "../hooks/useSound";
 import confettiPopSound from "../assets/sounds/confetti.mp3";
 import applauseSound from "../assets/sounds/applause.mp3";
 import unsoldSound from "../assets/sounds/unsold.mp3";
 import TextInfo from "../components/TextDetail";
-import HailIcon from "@mui/icons-material/Hail";
-// import CheckCircle from '@mui/icons-material/CheckCircle';
 import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 import GavelIcon from "@mui/icons-material/Gavel";
 import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
@@ -83,22 +76,26 @@ const AudienceScreen = () => {
     <Box
       className={styles.container}
       sx={{
-        backgroundImage:
-          "url(https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737272/audience_screen_bgv_ogj1c2.jpg)",
+        backgroundImage: audienceScreenBg,
       }}
     >
       <Stack
         sx={{
           height: 80,
           borderBottom: "1px solid #fff",
-              boxShadow:
-                              "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
+          boxShadow: "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
           padding: 4,
           backgroundColor: "#0a163dd6",
         }}
         alignItems={"center"}
       >
-        <Stack width={"100%"} direction={"row"} alignItems={"center"} justifyContent={"space-around"} spacing={4}>
+        <Stack
+          width={"100%"}
+          direction={"row"}
+          alignItems={"center"}
+          justifyContent={"space-around"}
+          spacing={4}
+        >
           <Box>
             <img src={splLogo} alt="icon" style={{ width: 100, height: 100 }} />
           </Box>
@@ -156,10 +153,10 @@ const AudienceScreen = () => {
                           alt="Remy Sharp"
                           src={
                             eventStatus === "NEXT_PLAYER"
-                              ? player
+                              ? mysteryCard
                               : ongoingAuction
-                              ? getImageUrl(ongoingAuction?.player.photo)
-                              : player
+                              ? ongoingAuction?.player.photo
+                              : mysteryCard
                           }
                           sx={{
                             width: 280,
@@ -176,9 +173,18 @@ const AudienceScreen = () => {
                           }}
                         />
                         {eventStatus === "ONGOING" ? (
-                          <Typography variant="h4">
-                            {ongoingAuction?.player.name}
-                          </Typography>
+                          <Stack
+                            direction={"column"}
+                            spacing={1}
+                            alignItems={"center"}
+                          >
+                            <Typography variant="h4">
+                              {ongoingAuction?.player.name}
+                            </Typography>
+                            <Typography variant="h6">
+                              {ongoingAuction?.player.type}
+                            </Typography>
+                          </Stack>
                         ) : (
                           <Typography
                             variant="h4"
@@ -319,9 +325,9 @@ const AudienceScreen = () => {
                                   </Typography>
                                   <Box>
                                     <img
-                                      src={getImageUrl(
+                                      src={
                                         ongoingAuction?.currentBiddingTeam?.logo
-                                      )}
+                                      }
                                       alt="icon"
                                       style={{ width: 150, height: 150 }}
                                     />
@@ -416,10 +422,27 @@ const AudienceScreen = () => {
                             icon={<GroupAddRoundedIcon />}
                           />
                         }
-                        value={<Stack direction={"row"} alignItems={"flex-end"} justifyContent={"flex-start"} spacing={1}>
-                          <Typography variant="h4" sx={{color:"#0d939fff"}}>{availablePlayers?.length || 0}</Typography>
-                          <Typography variant="h6" sx={{color:"#0d939fff"}}>/{players?.length || 0}</Typography>
-                        </Stack>}
+                        value={
+                          <Stack
+                            direction={"row"}
+                            alignItems={"flex-end"}
+                            justifyContent={"flex-start"}
+                            spacing={1}
+                          >
+                            <Typography
+                              variant="h4"
+                              sx={{ color: "#0d939fff" }}
+                            >
+                              {availablePlayers?.length || 0}
+                            </Typography>
+                            <Typography
+                              variant="h6"
+                              sx={{ color: "#0d939fff" }}
+                            >
+                              /{players?.length || 0}
+                            </Typography>
+                          </Stack>
+                        }
                       />
                       <TextInfo
                         type={
@@ -430,7 +453,11 @@ const AudienceScreen = () => {
                             icon={<GavelIcon />}
                           />
                         }
-                        value={<Typography variant="h4" sx={{color:"#03520bff"}}>{soldPlayers?.length || 0}</Typography>}
+                        value={
+                          <Typography variant="h4" sx={{ color: "#03520bff" }}>
+                            {soldPlayers?.length || 0}
+                          </Typography>
+                        }
                       />
                       <TextInfo
                         type={
@@ -441,7 +468,11 @@ const AudienceScreen = () => {
                             icon={<DoNotDisturbAltIcon />}
                           />
                         }
-                        value={<Typography variant="h4" sx={{color:"#f80606ff"}}>{unsoldPlayers?.length || 0}</Typography>}
+                        value={
+                          <Typography variant="h4" sx={{ color: "#f80606ff" }}>
+                            {unsoldPlayers?.length || 0}
+                          </Typography>
+                        }
                       />
                     </Stack>
                     {/* <Stack padding={2} width={"50%"}>

@@ -19,9 +19,11 @@ const initialState = {
   players: players,
   teams: teams,
   basePrice: 50,
-  availablePlayers: players.map((p) => p.id),
+  availablePlayers: players
+    .filter((pl) => pl.bidResult === "AVAILABLE")
+    .map((p) => p.id),
   unsoldPlayers: [],
-  soldPlayers: [],
+  soldPlayers: ["1", "7", "8", "17", "18", "28", "30", "31", "35", "36", "37"],
   eventStatus: "NEXT_PLAYER", // "NEXT_PLAYER" | "ONGOING"
   audienceScreen: "AUCTION_PANEL", // AUCTION_PANEL | TEAMS
   auctionRules: {
@@ -65,7 +67,6 @@ export function GlobalProvider({ children }) {
   }, []);
 
   const updateState = (newValues) => {
-    console.log(">>>",newValues);
     setState((prev) => {
       const updated = { ...prev, ...newValues };
       // Save to main process for other windows
@@ -85,7 +86,9 @@ export function GlobalProvider({ children }) {
   };
 
   return (
-    <GlobalContext.Provider value={{ state, updateState, resetGlobalState, getPlayerData }}>
+    <GlobalContext.Provider
+      value={{ state, updateState, resetGlobalState, getPlayerData }}
+    >
       {children}
     </GlobalContext.Provider>
   );

@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { getImageUrl } from "../utils/images";
 import { Stack } from "@mui/material";
 import TextInfo from "./TextDetail";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
@@ -33,8 +32,8 @@ export default function TeamsCardBiddingPanel({ team, sx }) {
         <CardMedia
           component="img"
           sx={{ width: 130, height: "100%", objectFit: "contain" }}
-          image={getImageUrl(team.logo)}
-          alt="Live from space album cover"
+          image={team.logo}
+          alt="team_logo"
         />
       </Box>
       <Box sx={{ flexDirection: "column", width: "100%" }}>

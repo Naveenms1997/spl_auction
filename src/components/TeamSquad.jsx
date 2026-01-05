@@ -1,15 +1,14 @@
 import { Avatar, Box, Card, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
-import { getImageUrl } from "../utils/images";
 import { useAppContext } from "../context/GlobalContext";
 
 function TeamSquad({ team }) {
-    const { state, updateState, getPlayerData } = useAppContext();
-    const { players } = state || {};
-  
-  const selectedPlayers = players.filter(p=>{
-    return team.selectedPlayers.includes(p.id); 
-  })
+  const { state } = useAppContext();
+  const { players } = state || {};
+
+  const selectedPlayers = team.selectedPlayers.map((id) => {
+    const playerInfo = players.find((p) => p.id === id);
+    return playerInfo;
+  });
 
   return (
     <Card
@@ -28,11 +27,7 @@ function TeamSquad({ team }) {
         spacing={1}
       >
         <Stack padding={0.5}>
-          <img
-            src={getImageUrl(team?.logo)}
-            alt="icon"
-            style={{ width: 40, height: 40 }}
-          />
+          <img src={team?.logo} alt="icon" style={{ width: 40, height: 40 }} />
         </Stack>
         <Typography variant="h6" color="#000">
           {team.name}
@@ -48,8 +43,8 @@ function TeamSquad({ team }) {
       >
         {(
           [
-            ...selectedPlayers||[],
-            ...Array(15 - (selectedPlayers.length||0)).fill(null),
+            ...(selectedPlayers || []),
+            ...Array(15 - (selectedPlayers.length || 0)).fill(null),
           ] || []
         ).map((player, i) => {
           return (
@@ -60,13 +55,8 @@ function TeamSquad({ team }) {
               spacing={1}
               width={"100%"}
             >
-              <Typography variant="subtitle1" >{`${i + 1}.`}</Typography>
+              <Typography variant="subtitle1">{`${i + 1}.`}</Typography>
               <Chip
-                avatar={
-                  player ? (
-                    <Avatar alt={player.name} src={getImageUrl(player.photo)} />
-                  ) : undefined
-                }
                 label={
                   <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>
                     {player ? player.name : ""}
@@ -81,7 +71,6 @@ function TeamSquad({ team }) {
                     : "1px solid #242b2222",
                   width: "100%",
                   justifyContent: "flex-start",
-                  pl: 1,
                 }}
               />
             </Stack>

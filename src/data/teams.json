@@ -2,68 +2,67 @@
   {
     "id": "royal_hunters",
     "name": "Royal Hunters",
-    "logo": "royal_hunters.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737283/royal_hunters_rpp8p0.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["28", "36"]
   },
   {
     "id": "raj_diamonds",
     "name": "Raj Diamonds 999",
-    "logo": "raj_diamonds.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
-
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737280/raj_diamonds_iyn0ia.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["30", "17"]
   },
   {
     "id": "power_hitters",
     "name": "Power Hitters",
-    "logo": "power_hitters.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737281/power_hitters_gowtvy.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["31", "7"]
   },
   {
     "id": "surgical_strikers",
     "name": "Surgical Strikers",
-    "logo": "surgical_strikers.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737281/surgical_strikers_uwwxwb.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["1", "37"]
   },
   {
     "id": "master_minds",
     "name": "Master Minds",
-    "logo": "master_minds.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737274/master_minds_pvab9o.jpg",
+    "playersBought": 1,
+    "requiuredPlayers": 14,
+    "totalSpent": 500,
+    "budgetLeft": 4500,
+    "maxBidPerPlayer": 3850,
+    "selectedPlayers": ["8"]
   },
   {
     "id": "golden_eagles",
     "name": "Golden Eagles",
-    "logo": "golden_eagles.jpg",
-    "playersBought": 0,
-    "requiuredPlayers": 15,
-    "totalSpent": 0,
-    "budgetLeft": 5000,
-    "maxBidPerPlayer": 4300,
-    "selectedPlayers": []
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737272/golden_eagles_sgayxe.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["35", "18"]
   }
 ]

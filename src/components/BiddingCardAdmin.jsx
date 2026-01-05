@@ -9,9 +9,8 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { getImageUrl } from "../utils/images";
 import { useAppContext } from "../context/GlobalContext";
-import mysteryCard from "../assets/images/mysteryCard2.png";
+import { mysteryCard } from "../assets/index";
 import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 import GavelIcon from "@mui/icons-material/Gavel";
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
@@ -29,16 +28,14 @@ const getBidStepAmount = (amount) => {
   if (amount < 100) return 10;
   if (amount < 200) return 20;
   if (amount < 500) return 30;
-  if (amount < 2000) return 50;
-  return 100;
+  return 50;
 };
 
 const getBidPointerAmount = (amount) => {
   if (amount < 100) return 50;
   if (amount < 200) return 100;
   if (amount < 500) return 200;
-  if (amount < 2000) return 500;
-  return 2000;
+  return 500;
 };
 
 const getNextBidAmount = (currentAmount) => {
@@ -238,7 +235,7 @@ function BiddingCardAdmin({ player }) {
           <CardMedia
             component="img"
             sx={{ width: 150, height: "100%", objectFit: "contain" }}
-            image={getImageUrl(player.photo)}
+            image={player.photo}
             alt="Live from space album cover"
           />
         </Box>
@@ -378,7 +375,7 @@ function BiddingCardAdmin({ player }) {
                     >
                       <Box padding={2}>
                         <img
-                          src={getImageUrl(team.logo)}
+                          src={team.logo}
                           alt="icon"
                           style={{ width: 100, height: 100 }}
                         />

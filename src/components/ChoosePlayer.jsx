@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { shuffleArray } from "../utils/shuffle";
-import mysteryCard from "../assets/images/mysteryCard2.png";
+import { mysteryCard } from "../assets/index";
 import { useAppContext } from "../context/GlobalContext";
 
 function ChoosePlayer() {
@@ -9,7 +9,7 @@ function ChoosePlayer() {
   const { availablePlayers } = state || {};
 
   const selectPlayerForAuction = (player) => {
-    const playerData = getPlayerData(player)
+    const playerData = getPlayerData(player);
     updateState({
       ongoingAuction: {
         player: playerData,
@@ -48,10 +48,11 @@ function ChoosePlayer() {
                 borderRadius: "8px",
                 transition: "transform 0.25s ease, box-shadow 0.25s ease",
                 "&:hover": {
-                  transform: "scale(1.15)", 
-                  boxShadow: "1px 0px 1px 3px rgba(40, 40, 41, 0.34)", 
-                  zIndex: 10, 
+                  transform: "scale(1.15)",
+                  boxShadow: "1px 0px 1px 3px rgba(40, 40, 41, 0.34)",
+                  zIndex: 10,
                 },
+                width: "45px",
               }}
               onClick={() => selectPlayerForAuction(player)}
             >
