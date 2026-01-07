@@ -357,8 +357,8 @@
   },
   {
     "id": "35",
-    "name": "Rakesh",
-    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767625130/Naveen_fdoh5i.png",
+    "name": "Rakesh KN",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767696776/Screenshot_2026-01-06_at_4.22.48_PM_mdanv2.png",
     "type": "All-Rounder",
     "basePrice": 50,
     "finalBidAmount": 300,
@@ -382,7 +382,7 @@
   {
     "id": "37",
     "name": "Prashanth YB",
-    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767641069/Screenshot_2026-01-06_at_12.54.22_AM_ldke9c.png",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767716693/Screenshot_2026-01-06_at_9.54.43_PM_atym8z.png",
     "type": "All-rounder",
     "basePrice": 50,
     "finalBidAmount": 500,
@@ -390,5 +390,25 @@
     "currentBid": null,
     "bidResult": "SOLD",
     "isIconPlayer": true
+  },
+  {
+    "id": "38",
+    "name": "Shivaputra KT",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767721806/Screenshot_2026-01-06_at_11.19.55_PM_qfhhry.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "39",
+    "name": "Sumanth",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767755197/Screenshot_2026-01-07_at_8.36.29_AM_ovlvp3.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]
