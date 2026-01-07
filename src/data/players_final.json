@@ -370,7 +370,7 @@
   {
     "id": "36",
     "name": "Maruthi KB",
-    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767641988/Screenshot_2026-01-06_at_1.09.42_AM_nzkmpb.png",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767803686/Screenshot_2026-01-07_at_10.04.33_PM_dd6fwg.png",
     "type": "All-rounder",
     "basePrice": 50,
     "finalBidAmount": 500,
@@ -406,6 +406,26 @@
     "name": "Sumanth",
     "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767755197/Screenshot_2026-01-07_at_8.36.29_AM_ovlvp3.png",
     "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "40",
+    "name": "Maruthi KT",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767803774/Screenshot_2026-01-07_at_10.06.03_PM_wbtuuk.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "41",
+    "name": "Manoj SB",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767803845/Screenshot_2026-01-07_at_10.07.15_PM_tyfjij.png",
+    "type": "Batsman",
     "basePrice": 50,
     "team": null,
     "currentBid": null,
