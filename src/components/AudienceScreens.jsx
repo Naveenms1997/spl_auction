@@ -1,8 +1,8 @@
 import { Button, Card, Grid, Stack, Typography } from "@mui/material";
-import React from "react";
 import GroupsIcon from "@mui/icons-material/Groups";
 import GavelIcon from "@mui/icons-material/Gavel";
 import { useAppContext } from "../context/GlobalContext";
+import teams from "../data/teams.json";
 
 function AudienceScreens() {
   const { state, updateState } = useAppContext();
@@ -65,7 +65,7 @@ function AudienceScreens() {
                 }}
                 startIcon={<GroupsIcon />}
               >
-                Teams Squad
+                All Teams Squads
               </Button>
             </Grid>
 
@@ -83,6 +83,40 @@ function AudienceScreens() {
                 Auction Panel
               </Button>
             </Grid>
+          </Grid>
+
+          <Grid
+            container
+            spacing={2}
+            direction="column"
+            alignItems="stretch" // ensures full width
+            width={"100%"}
+          >
+            <Grid item xs={12}>
+              <Stack
+                sx={{
+                  width: "100%",
+                  alignItems: "center",
+                  color: "#000",
+                }}
+              >
+                <Typography variant="h6">Single Team Squads</Typography>
+              </Stack>
+            </Grid>
+
+            {teams.map((team) => (
+              <Grid item xs={12}>
+                <Button
+                  key={team.id}
+                  variant={audienceScreen === team.id ? "contained" : "outlined"}
+                  onClick={() => {
+                    setAudienceScreenView(team.id);
+                  }}
+                >
+                  {team.name}
+                </Button>
+              </Grid>
+            ))}
           </Grid>
         </Stack>
       </Stack>

@@ -28,6 +28,8 @@ import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 import GavelIcon from "@mui/icons-material/Gavel";
 import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import Teams from "./Teams";
+import ImageCard from "../components/PlayersPhoto";
+import TeamSquadWithPhotos from "../components/TeamSquadWithPhotos";
 
 const AudienceScreen = () => {
   const { state } = useAppContext();
@@ -514,6 +516,19 @@ const AudienceScreen = () => {
       ) : null}
 
       {audienceScreen === "TEAMS" ? <Teams /> : null}
+
+      {[
+        "royal_hunters",
+        "raj_diamonds",
+        "power_hitters",
+        "surgical_strikers",
+        "master_minds",
+        "golden_eagles",
+      ].includes(audienceScreen) ? (
+        <Box sx={{ paddingX: 4}}>
+          <TeamSquadWithPhotos />
+        </Box>
+      ) : null}
     </Box>
   );
 };
