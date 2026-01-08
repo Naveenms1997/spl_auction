@@ -430,5 +430,15 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "42",
+    "name": "Maruthi HB",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767847474/Screenshot_2026-01-08_at_10.14.25_AM_fq5akn.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]

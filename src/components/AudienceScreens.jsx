@@ -19,7 +19,6 @@ function AudienceScreens() {
       sx={{
         boxShadow: "0 4px 20px rgba(0, 0, 0, 0.2)", // soft shadow
         padding: 4,
-        // width: "20%",
       }}
     >
       <Stack>
@@ -29,95 +28,90 @@ function AudienceScreens() {
           alignItems={"flex-start"}
           justifyContent={"flex-start"}
         >
+          <Button
+            variant="contained"
+            color="info"
+            onClick={() => window.electronAPI.send("open-second-window")}
+          >
+            Open Second Window
+          </Button>
+
           <Stack
+            padding={2}
             sx={{
-              backgroundColor: "#68e26eb6",
-              width: "100%",
-              alignItems: "center",
-              color: "#000",
+              backgroundColor: "#f5f5f5",
+              borderRadius: 2,
             }}
-          >
-            <Typography variant="h6">Audience Screen Pages</Typography>
-          </Stack>
-          <Grid
-            container
             spacing={2}
-            direction="column"
-            alignItems="stretch" // ensures full width
-            width={"100%"}
           >
-            <Grid item xs={12}>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => window.electronAPI.send("open-second-window")}
-              >
-                Open Second Window
-              </Button>
-            </Grid>
-
-            <Grid item xs={12}>
-              <Button
-                variant={audienceScreen === "TEAMS" ? "contained" : "outlined"}
-                color="warning"
-                onClick={() => {
-                  setAudienceScreenView("TEAMS");
-                }}
-                startIcon={<GroupsIcon />}
-              >
-                All Teams Squads
-              </Button>
-            </Grid>
-
-            <Grid item xs={12}>
-              <Button
-                variant={
-                  audienceScreen === "AUCTION_PANEL" ? "contained" : "outlined"
-                }
-                color="warning"
-                startIcon={<GavelIcon />}
-                onClick={() => {
-                  setAudienceScreenView("AUCTION_PANEL");
-                }}
-              >
-                Auction Panel
-              </Button>
-            </Grid>
-          </Grid>
-
-          <Grid
-            container
-            spacing={2}
-            direction="column"
-            alignItems="stretch" // ensures full width
-            width={"100%"}
-          >
-            <Grid item xs={12}>
+            <Stack direction="column" spacing={1}>
               <Stack
                 sx={{
                   width: "100%",
                   alignItems: "center",
-                  color: "#000",
                 }}
               >
-                <Typography variant="h6">Single Team Squads</Typography>
+                <Typography variant="h6">Audience Screen Pages</Typography>
               </Stack>
-            </Grid>
 
-            {teams.map((team) => (
-              <Grid item xs={12}>
+              <Stack spacing={2}>
                 <Button
-                  key={team.id}
-                  variant={audienceScreen === team.id ? "contained" : "outlined"}
+                  variant={
+                    audienceScreen === "AUCTION_PANEL"
+                      ? "contained"
+                      : "outlined"
+                  }
+                  color="warning"
+                  startIcon={<GavelIcon />}
                   onClick={() => {
-                    setAudienceScreenView(team.id);
+                    setAudienceScreenView("AUCTION_PANEL");
                   }}
                 >
-                  {team.name}
+                  Auction Panel
                 </Button>
-              </Grid>
-            ))}
-          </Grid>
+
+                <Button
+                  variant={
+                    audienceScreen === "TEAMS" ? "contained" : "outlined"
+                  }
+                  color="warning"
+                  onClick={() => {
+                    setAudienceScreenView("TEAMS");
+                  }}
+                  startIcon={<GroupsIcon />}
+                >
+                  All Teams Squads
+                </Button>
+              </Stack>
+            </Stack>
+
+            <Stack
+              direction="column"
+              spacing={1}
+              sx={{
+                // backgroundColor: "#eaeae0d3",
+              }}
+            >
+              <Stack>
+                <Typography variant="h6">Team Squads</Typography>
+              </Stack>
+              <Stack spacing={2}>
+                {teams.map((team) => (
+                  <Button
+                    key={team.id}
+                    variant={
+                      audienceScreen === team.id ? "contained" : "outlined"
+                    }
+                    onClick={() => {
+                      setAudienceScreenView(team.id);
+                    }}
+                  >
+                    {team.name}
+                  </Button>
+                ))}
+              </Stack>
+            </Stack>
+          </Stack>
         </Stack>
       </Stack>
     </Card>
