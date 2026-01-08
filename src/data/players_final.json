@@ -440,5 +440,45 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "43",
+    "name": "Harshavardhana NH",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767894822/Screenshot_2026-01-08_at_11.23.30_PM_fb6qat.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "44",
+    "name": "Nandeesha CT",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767894923/Screenshot_2026-01-08_at_11.25.10_PM_shirag.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "45",
+    "name": "Maruthi DM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767894992/Screenshot_2026-01-08_at_11.26.22_PM_fiu1p6.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "46",
+    "name": "Hanumesh DT",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767895067/Screenshot_2026-01-08_at_11.27.32_PM_hddtye.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]
