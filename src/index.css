@@ -1,6 +1,28 @@
+/* src/index.css */
+
+/* Reset default margins/paddings and prevent scrolling */
 html, body, #root {
-  height: 100%;
+  width: 100%;
   margin: 0;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+  padding: 0;
+  overflow: hidden; /* Prevent scrollbars */
 }
-button { padding: 8px 12px; margin-top: 12px; }
+
+body {
+  /* font-family: Arial, sans-serif; */
+   /* font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; */
+   font-family: 'Open Sans', 'Arial', sans-serif;
+  background-color: rgb(240, 240, 240);
+  box-sizing: border-box; 
+}
+
+/* Remove default scroll/spin buttons in number inputs */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}

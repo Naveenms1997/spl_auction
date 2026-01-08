@@ -1,13 +1,40 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import players from "../data/players.json";
+import teams from "../data/teams.json";
 
 const GlobalContext = createContext();
+// const ongoingAuction = {
+//   player:players[0], // full player data
+//   currentBiddingTeam:null, // or team
+//   currentBidAmount:null, // will start with base price,
+//   isSold:false,
+//   isUnsold:false,
+//   playSoundAnime:false
+// }
+
+// bidResult = AVAILABLE || SOLD || UNSOLD
+
+const initialState = {
+  ongoingAuction: null,
+  players: players,
+  teams: teams,
+  basePrice: 50,
+  availablePlayers: players
+    .filter((pl) => pl.bidResult === "AVAILABLE")
+    .map((p) => p.id),
+  unsoldPlayers: [],
+  soldPlayers: ["1", "7", "8", "17", "18", "28", "30", "31", "35", "36", "37"],
+  eventStatus: "NEXT_PLAYER", // "NEXT_PLAYER" | "ONGOING"
+  audienceScreen: "AUCTION_PANEL", // AUCTION_PANEL | TEAMS
+  auctionRules: {
+    maxPlayersPerTeam: 15,
+  },
+};
 
 export function GlobalProvider({ children }) {
   const [state, setState] = useState(() => {
     const saved = localStorage.getItem("globalState");
-    return saved
-      ? JSON.parse(saved)
-      : { player: "", amount: 0 };
+    return saved ? JSON.parse(saved) : initialState;
   });
 
   // Save to localStorage whenever state changes
@@ -43,13 +70,25 @@ export function GlobalProvider({ children }) {
     setState((prev) => {
       const updated = { ...prev, ...newValues };
       // Save to main process for other windows
+
       window.electronAPI?.send("context-update", updated);
       return updated;
     });
   };
 
+  const resetGlobalState = () => {
+    setState(initialState);
+  };
+
+  const getPlayerData = (id) => {
+    const player = state.players.find((p) => p.id === id);
+    return player;
+  };
+
   return (
-    <GlobalContext.Provider value={{ state, updateState }}>
+    <GlobalContext.Provider
+      value={{ state, updateState, resetGlobalState, getPlayerData }}
+    >
       {children}
     </GlobalContext.Provider>
   );
