@@ -480,5 +480,105 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "47",
+    "name": "Prabhu Gowda BG",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767973617/Screenshot_2026-01-09_at_9.16.50_PM_pr6clj.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "48",
+    "name": "Prabhu Gowda BG",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767973617/Screenshot_2026-01-09_at_9.16.50_PM_pr6clj.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "49",
+    "name": "Prasanna M",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977550/Screenshot_2026-01-09_at_10.22.21_PM_cloxn8.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "50",
+    "name": "Hanumantha KM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977644/Screenshot_2026-01-09_at_10.23.58_PM_bvtpir.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "51",
+    "name": "Jayakumara MS",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977712/Screenshot_2026-01-09_at_10.25.06_PM_rn9apv.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "52",
+    "name": "Nagabhushana KA",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977849/Screenshot_2026-01-09_at_10.27.13_PM_i4mskp.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "53",
+    "name": "Chiru talavar",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977939/Screenshot_2026-01-09_at_10.28.53_PM_j37bhj.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "54",
+    "name": "Nagaraj",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767977993/Screenshot_2026-01-09_at_10.29.45_PM_a3xtvi.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "55",
+    "name": "Halesh DK",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767978047/Screenshot_2026-01-09_at_10.30.42_PM_p7iymz.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "56",
+    "name": "Nagraja KS",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1767978111/Screenshot_2026-01-09_at_10.31.44_PM_ilfobs.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]
