@@ -670,5 +670,125 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "66",
+    "name": "Manjunatha",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768142521/Screenshot_2026-01-11_at_8.11.34_PM_znn73r.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "67",
+    "name": "Halesh GP",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768142602/Screenshot_2026-01-11_at_8.13.11_PM_um0hrq.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "68",
+    "name": "Madhu O",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768142731/Screenshot_2026-01-11_at_8.14.38_PM_bgrtbg.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "69",
+    "name": "Darshan GP",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768142828/Screenshot_2026-01-11_at_8.16.38_PM_s3opxe.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "70",
+    "name": "Ravivarma YK",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143011/Screenshot_2026-01-11_at_8.20.03_PM_vkc4we.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "71",
+    "name": "Maruthi MB",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143091/Screenshot_2026-01-11_at_8.21.19_PM_oztvpr.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "72",
+    "name": "Vinay KB",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143163/Screenshot_2026-01-11_at_8.22.34_PM_ckdyec.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "73",
+    "name": "Hajarath ali T",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143246/Screenshot_2026-01-11_at_8.23.55_PM_kdv8fo.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "74",
+    "name": "Maruthi G",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143330/Screenshot_2026-01-11_at_8.25.23_PM_yfbgfx.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "75",
+    "name": "K Rajappa",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143246/Screenshot_2026-01-11_at_8.23.55_PM_kdv8fo.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "76",
+    "name": "Basavaraj",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143495/Screenshot_2026-01-11_at_8.28.03_PM_jvd27h.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "77",
+    "name": "Basavaraj D",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143585/Screenshot_2026-01-11_at_8.29.35_PM_oruwvp.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]
