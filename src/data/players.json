@@ -850,5 +850,145 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "84",
+    "name": "DH Deekshith",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768236460/Screenshot_2026-01-12_at_10.17.33_PM_uhmjzm.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "85",
+    "name": "Halesha KA",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494523/Screenshot_2026-01-15_at_9.58.36_PM_lz87sz.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "86",
+    "name": "Basavaraja DS",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494612/Screenshot_2026-01-15_at_10.00.02_PM_hmwmyr.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "87",
+    "name": "Kumbhar Prakasha C",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494686/Screenshot_2026-01-15_at_10.01.19_PM_j7x0xb.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "88",
+    "name": "Hariprasad Gowda DS",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494797/Screenshot_2026-01-15_at_10.03.11_PM_poihaw.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "89",
+    "name": "Pradeep T",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494906/Screenshot_2026-01-15_at_10.04.57_PM_tbsbqx.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "90",
+    "name": "Kumara SM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768494990/Screenshot_2026-01-15_at_10.06.20_PM_nub9cw.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "91",
+    "name": "Khasim ali KT",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768495080/Screenshot_2026-01-15_at_10.07.48_PM_lksdtt.png",
+    "type": "Wicket Keeper",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "92",
+    "name": "Nagaraja MA",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768495160/Screenshot_2026-01-15_at_10.09.14_PM_kvoodb.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "93",
+    "name": "Ajjayya GM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768495278/Screenshot_2026-01-15_at_10.11.12_PM_vc20ls.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "94",
+    "name": "Thimmanna KB",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768495352/Screenshot_2026-01-15_at_10.12.25_PM_qg29u5.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "95",
+    "name": "Ajjayya M",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768495830/Screenshot_2026-01-15_at_10.20.21_PM_bqrb4b.png",
+    "type": "Bowler",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "96",
+    "name": "Abhi k",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768496007/Screenshot_2026-01-15_at_10.23.18_PM_ycjpbu.png",
+    "type": "Batsman",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "97",
+    "name": "Halesh milky",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768496077/Screenshot_2026-01-15_at_10.24.30_PM_lb3gnv.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]

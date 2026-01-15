@@ -28,7 +28,6 @@ import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 import GavelIcon from "@mui/icons-material/Gavel";
 import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import Teams from "./Teams";
-import ImageCard from "../components/PlayersPhoto";
 import TeamSquadWithPhotos from "../components/TeamSquadWithPhotos";
 
 const AudienceScreen = () => {
