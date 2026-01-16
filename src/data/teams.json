@@ -1,5 +1,16 @@
 [
   {
+    "id": "golden_eagles",
+    "name": "Golden Eagles",
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737272/golden_eagles_sgayxe.jpg",
+    "playersBought": 2,
+    "requiuredPlayers": 13,
+    "totalSpent": 800,
+    "budgetLeft": 4200,
+    "maxBidPerPlayer": 3600,
+    "selectedPlayers": ["35", "18"]
+  },
+  {
     "id": "royal_hunters",
     "name": "Royal Hunters",
     "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737283/royal_hunters_rpp8p0.jpg",
@@ -12,7 +23,7 @@
   },
   {
     "id": "raj_diamonds",
-    "name": "Raj Diamonds 999",
+    "name": "Dr. Raj Diamonds",
     "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737280/raj_diamonds_iyn0ia.jpg",
     "playersBought": 2,
     "requiuredPlayers": 13,
@@ -33,17 +44,6 @@
     "selectedPlayers": ["31", "7"]
   },
   {
-    "id": "surgical_strikers",
-    "name": "Surgical Strikers",
-    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737281/surgical_strikers_uwwxwb.jpg",
-    "playersBought": 2,
-    "requiuredPlayers": 13,
-    "totalSpent": 800,
-    "budgetLeft": 4200,
-    "maxBidPerPlayer": 3600,
-    "selectedPlayers": ["1", "37"]
-  },
-  {
     "id": "master_minds",
     "name": "Master Minds",
     "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737274/master_minds_pvab9o.jpg",
@@ -55,14 +55,15 @@
     "selectedPlayers": ["8"]
   },
   {
-    "id": "golden_eagles",
-    "name": "Golden Eagles",
-    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737272/golden_eagles_sgayxe.jpg",
+    "id": "surgical_strikers",
+    "name": "Surgical Strikers",
+    "logo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1763737281/surgical_strikers_uwwxwb.jpg",
     "playersBought": 2,
     "requiuredPlayers": 13,
     "totalSpent": 800,
     "budgetLeft": 4200,
     "maxBidPerPlayer": 3600,
-    "selectedPlayers": ["35", "18"]
+    "selectedPlayers": ["1", "37"]
   }
+  
 ]
