@@ -241,7 +241,7 @@ function BiddingCardAdmin({ player }) {
         </Box>
         <Box sx={{ flexDirection: "column", width: "100%" }} padding={2}>
           <Stack
-            sx={{ width: "100%" }}
+            sx={{ width: "100%", height: "100%" }}
             direction={"row"}
             justifyContent={"space-between"}
           >
@@ -256,7 +256,13 @@ function BiddingCardAdmin({ player }) {
                 </Typography>
               </Stack>
             </Stack>
-            <Stack paddingRight={2}>
+            <Stack
+              paddingRight={2}
+              direction={"column"}
+              justifyContent={"space-between"}
+              height={"100%"}
+              spacing={4}
+            >
               <Grid
                 container
                 spacing={2}
@@ -296,19 +302,19 @@ function BiddingCardAdmin({ player }) {
                     UNSOLD
                   </Button>
                 </Grid>
-
-                <Grid item xs={12}>
-                  <Button
-                    fullWidth
-                    variant="outlined"
-                    color="info"
-                    startIcon={<RotateLeftIcon />}
-                    onClick={restartBid}
-                  >
-                    Restart
-                  </Button>
-                </Grid>
               </Grid>
+
+              <Stack>
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  color="warning"
+                  startIcon={<RotateLeftIcon />}
+                  onClick={restartBid}
+                >
+                  Restart
+                </Button>
+              </Stack>
             </Stack>
           </Stack>
         </Box>

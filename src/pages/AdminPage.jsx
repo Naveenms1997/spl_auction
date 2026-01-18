@@ -8,7 +8,13 @@ import UnsoldPlayers from "./UnsoldPlayers";
 
 export default function AdminPage() {
   const { state, updateState, resetGlobalState } = useAppContext();
-  const { ongoingAuction, eventStatus, players, unsoldPlayers, availablePlayers } = state || {};
+  const {
+    ongoingAuction,
+    eventStatus,
+    players,
+    unsoldPlayers,
+    availablePlayers,
+  } = state || {};
 
   const [openUnsoldPlayer, setOpenUnsoldPlayer] = useState(false);
 
@@ -18,6 +24,7 @@ export default function AdminPage() {
     }
     updateState({
       eventStatus: "NEXT_PLAYER",
+      ongoingAuction: null,
     });
   };
 
@@ -66,7 +73,11 @@ export default function AdminPage() {
                 variant="outlined"
                 color="secondary"
                 onClick={chooseNextPlayer}
-                disabled={!ongoingAuction?.isSold && !ongoingAuction?.isUnsold}
+                disabled={
+                  !ongoingAuction?.isSold &&
+                  !ongoingAuction?.isUnsold &&
+                  !openUnsoldPlayer
+                }
               >
                 Choose Next Player
               </Button>
@@ -80,13 +91,13 @@ export default function AdminPage() {
                 Unsold players
               </Button>
 
-              <Button
+              {/* <Button
                 variant="outlined"
                 color="secondary"
                 onClick={resetGlobalState}
               >
                 RESET
-              </Button>
+              </Button> */}
             </Stack>
             {openUnsoldPlayer ? (
               <Card

@@ -1,6 +1,4 @@
 import { Box, Card, Chip, Stack, Typography } from "@mui/material";
-import React from "react";
-import TextInfo from "../components/TextDetail";
 import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 import GavelIcon from "@mui/icons-material/Gavel";
@@ -11,14 +9,10 @@ import TeamSquad from "../components/TeamSquad";
 function Teams() {
   const { state } = useAppContext();
   const {
-    ongoingAuction,
     teams,
-    eventStatus,
-    players,
     soldPlayers,
     unsoldPlayers,
     availablePlayers,
-    audienceScreen,
   } = state || {};
 
   return (

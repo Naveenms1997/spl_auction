@@ -764,7 +764,7 @@
   {
     "id": "75",
     "name": "K Rajappa",
-    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768143415/Screenshot_2026-01-11_at_8.26.44_PM_brxdqi.png",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768667667/Screenshot_2026-01-17_at_10.04.19_PM_pc15cg.png",
     "type": "All-rounder",
     "basePrice": 50,
     "team": null,
@@ -985,6 +985,26 @@
     "id": "97",
     "name": "Halesh milky",
     "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768496077/Screenshot_2026-01-15_at_10.24.30_PM_lb3gnv.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "98",
+    "name": "Manjunatha K",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768659567/Screenshot_2026-01-17_at_7.49.16_PM_fhdyfc.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "99",
+    "name": "Srinidhi KM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768697904/Screenshot_2026-01-18_at_6.28.17_AM_xamj7h.png",
     "type": "All-rounder",
     "basePrice": 50,
     "team": null,
