@@ -82,10 +82,10 @@ const AudienceScreen = () => {
     >
       <Stack
         sx={{
-          height: 80,
+          height: 130,
           borderBottom: "1px solid #fff",
           boxShadow: "0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff",
-          padding: 4,
+          padding: 1,
           backgroundColor: "#0a163dd6",
         }}
         alignItems={"center"}
@@ -98,13 +98,18 @@ const AudienceScreen = () => {
           spacing={4}
         >
           <Box>
-            <img src={splLogo} alt="icon" style={{ width: 100, height: 100 }} />
+            <img src={splLogo} alt="icon" style={{ width: 120, height: 120 }} />
           </Box>
-          <Typography variant="h2" sx={{ color: "#fff", fontWeight: "bold" }}>
-            SPL-3 Auction
-          </Typography>
+          <Stack alignItems={"center"} spacing={0}>
+            <Typography variant="h2" sx={{ color: "#fff", fontWeight: "bold" }}>
+              SPL-2026
+            </Typography>
+            <Typography variant="h3" sx={{ color: "#fff", fontWeight: "bold" }}>
+              Season-03 Auction
+            </Typography>
+          </Stack>
           <Box>
-            <img src={splLogo} alt="icon" style={{ width: 100, height: 100 }} />
+            <img src={splLogo} alt="icon" style={{ width: 120, height: 120 }} />
           </Box>
         </Stack>
       </Stack>
@@ -115,7 +120,7 @@ const AudienceScreen = () => {
             spacing={4}
             direction={"row"}
             alignItems="flex-start"
-            justifyContent="space-between"
+            justifyContent="space-around"
             sx={{ height: "100%" }}
           >
             {/* ONGOING BID PANEL */}
@@ -199,7 +204,7 @@ const AudienceScreen = () => {
                               },
                             }}
                           >
-                            Waiting for next player...
+                            Waiting for next player
                           </Typography>
                         )}
                       </Stack>
@@ -501,7 +506,7 @@ const AudienceScreen = () => {
                   <Grid size={6} key={team.id} item sm={6} md={6}>
                     <TeamsCardBiddingPanel
                       sx={{
-                        minHeight: 120,
+                        height: 200,
                         borderRadius: 2,
                       }}
                       team={team}
@@ -524,7 +529,7 @@ const AudienceScreen = () => {
         "master_minds",
         "golden_eagles",
       ].includes(audienceScreen) ? (
-        <Box sx={{ paddingX: 4}}>
+        <Box sx={{ paddingX: 4 }}>
           <TeamSquadWithPhotos />
         </Box>
       ) : null}
