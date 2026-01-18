@@ -29,6 +29,7 @@ import GavelIcon from "@mui/icons-material/Gavel";
 import GroupAddRoundedIcon from "@mui/icons-material/GroupAddRounded";
 import Teams from "./Teams";
 import TeamSquadWithPhotos from "../components/TeamSquadWithPhotos";
+import AvailablePlayers from "./AvailablePlayers";
 
 const AudienceScreen = () => {
   const { state } = useAppContext();
@@ -422,7 +423,7 @@ const AudienceScreen = () => {
                       <TextInfo
                         type={
                           <Chip
-                            label={"Remaining Players"}
+                            label={"Available Players"}
                             variant="outlined"
                             color="info"
                             icon={<GroupAddRoundedIcon />}
@@ -546,7 +547,7 @@ const AudienceScreen = () => {
         </Box>
       ) : null}
 
-       {/* Welcome Page */}
+      {/* Welcome Page */}
       {audienceScreen === "WELCOME_PAGE" ? (
         <Stack alignItems={"center"} sx={{ height: "100%" }}>
           <img
@@ -556,6 +557,10 @@ const AudienceScreen = () => {
           />
         </Stack>
       ) : null}
+
+      {/* Available Players */}
+       {audienceScreen === "AVAILABLE_PLAYERS" ? <AvailablePlayers /> : null}
+
     </Box>
   );
 };

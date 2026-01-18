@@ -1,6 +1,7 @@
 import { Button, Card, Grid, Stack, Typography } from "@mui/material";
 import GroupsIcon from "@mui/icons-material/Groups";
 import GavelIcon from "@mui/icons-material/Gavel";
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import { useAppContext } from "../context/GlobalContext";
 import teams from "../data/teams.json";
 
@@ -36,31 +37,25 @@ function AudienceScreens() {
             Open Second Window
           </Button>
 
-           <Button
-                  variant={
-                    audienceScreen === "GUEST_PAGE"
-                      ? "contained"
-                      : "outlined"
-                  }
-                  onClick={() => {
-                    setAudienceScreenView("GUEST_PAGE");
-                  }}
-                >
-                  Guest Page
-                </Button>
+          <Button
+            variant={audienceScreen === "GUEST_PAGE" ? "contained" : "outlined"}
+            onClick={() => {
+              setAudienceScreenView("GUEST_PAGE");
+            }}
+          >
+            Guest Page
+          </Button>
 
-                <Button
-                  variant={
-                    audienceScreen === "WELCOME_PAGE"
-                      ? "contained"
-                      : "outlined"
-                  }
-                  onClick={() => {
-                    setAudienceScreenView("WELCOME_PAGE");
-                  }}
-                >
-                  Welcome Page
-                </Button>
+          <Button
+            variant={
+              audienceScreen === "WELCOME_PAGE" ? "contained" : "outlined"
+            }
+            onClick={() => {
+              setAudienceScreenView("WELCOME_PAGE");
+            }}
+          >
+            Welcome Page
+          </Button>
 
           <Stack
             padding={2}
@@ -108,16 +103,25 @@ function AudienceScreens() {
                 >
                   All Teams Squads
                 </Button>
+
+                <Button
+                  variant={
+                    audienceScreen === "AVAILABLE_PLAYERS"
+                      ? "contained"
+                      : "outlined"
+                  }
+                  color="warning"
+                  onClick={() => {
+                    setAudienceScreenView("AVAILABLE_PLAYERS");
+                  }}
+                  startIcon={<PersonAddIcon />}
+                >
+                  All Players
+                </Button>
               </Stack>
             </Stack>
 
-            <Stack
-              direction="column"
-              spacing={1}
-              sx={{
-                // backgroundColor: "#eaeae0d3",
-              }}
-            >
+            <Stack direction="column" spacing={1}>
               <Stack>
                 <Typography variant="h6">Team Squads</Typography>
               </Stack>
