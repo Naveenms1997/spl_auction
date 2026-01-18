@@ -30,11 +30,37 @@ function AudienceScreens() {
         >
           <Button
             variant="contained"
-            color="info"
+            color="inherit"
             onClick={() => window.electronAPI.send("open-second-window")}
           >
             Open Second Window
           </Button>
+
+           <Button
+                  variant={
+                    audienceScreen === "GUEST_PAGE"
+                      ? "contained"
+                      : "outlined"
+                  }
+                  onClick={() => {
+                    setAudienceScreenView("GUEST_PAGE");
+                  }}
+                >
+                  Guest Page
+                </Button>
+
+                <Button
+                  variant={
+                    audienceScreen === "WELCOME_PAGE"
+                      ? "contained"
+                      : "outlined"
+                  }
+                  onClick={() => {
+                    setAudienceScreenView("WELCOME_PAGE");
+                  }}
+                >
+                  Welcome Page
+                </Button>
 
           <Stack
             padding={2}

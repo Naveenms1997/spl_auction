@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { mysteryPlayer, audienceScreenBg } from "../assets/index";
-import { splLogo } from "../assets/index";
+import { splLogo, guestPage, weclomePage } from "../assets/index";
 import styles from "./AudienceScreen.module.css";
 import {
   Avatar,
@@ -521,6 +521,7 @@ const AudienceScreen = () => {
 
       {audienceScreen === "TEAMS" ? <Teams /> : null}
 
+      {/* Individual Team Squads */}
       {[
         "royal_hunters",
         "raj_diamonds",
@@ -532,6 +533,28 @@ const AudienceScreen = () => {
         <Box sx={{ paddingX: 4 }}>
           <TeamSquadWithPhotos />
         </Box>
+      ) : null}
+
+      {/* Guest Page */}
+      {audienceScreen === "GUEST_PAGE" ? (
+        <Box>
+          <img
+            src={guestPage}
+            alt="icon"
+            style={{ width: "100vw", height: "100%" }}
+          />
+        </Box>
+      ) : null}
+
+       {/* Welcome Page */}
+      {audienceScreen === "WELCOME_PAGE" ? (
+        <Stack alignItems={"center"} sx={{ height: "100%" }}>
+          <img
+            src={weclomePage}
+            alt="weclomePage"
+            style={{ width: "80%", height: "90%" }}
+          />
+        </Stack>
       ) : null}
     </Box>
   );
