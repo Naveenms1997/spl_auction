@@ -18,6 +18,7 @@ export default function AdminPage() {
     }
     updateState({
       eventStatus: "NEXT_PLAYER",
+      ongoingAuction:null
     });
   };
 

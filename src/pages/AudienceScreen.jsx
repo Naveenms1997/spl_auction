@@ -43,8 +43,8 @@ const AudienceScreen = () => {
     audienceScreen,
   } = state || {};
 
-  const playConfettiSound = useSound(confettiPopSound, 0.8);
-  const playApplauseSound = useSound(applauseSound, 0.8);
+  const playConfettiSound = useSound(confettiPopSound, 0.2);
+  const playApplauseSound = useSound(applauseSound, 0.3);
   const playUnsoldSound = useSound(unsoldSound, 0.8);
 
   useEffect(() => {
@@ -55,8 +55,8 @@ const AudienceScreen = () => {
       ongoingAuction.playSoundAnime
     ) {
       if (ongoingAuction?.isSold) {
-        playConfettiSound();
         playApplauseSound(); // play sound once when confetti starts
+        playConfettiSound();
       }
       if (ongoingAuction?.isUnsold) {
         playUnsoldSound();
