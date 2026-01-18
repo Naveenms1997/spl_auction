@@ -990,5 +990,25 @@
     "team": null,
     "currentBid": null,
     "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "98",
+    "name": "Manjunatha K",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768659567/Screenshot_2026-01-17_at_7.49.16_PM_fhdyfc.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
+  },
+  {
+    "id": "99",
+    "name": "Srinidhi KM",
+    "photo": "https://res.cloudinary.com/dllwmyi3w/image/upload/v1768697904/Screenshot_2026-01-18_at_6.28.17_AM_xamj7h.png",
+    "type": "All-rounder",
+    "basePrice": 50,
+    "team": null,
+    "currentBid": null,
+    "bidResult": "AVAILABLE"
   }
 ]
